@@ -132,8 +132,8 @@ const AlgorithmB = () => {
       const tempElement = document.createElement("div");
       tempElement.className =
         "flex items-center justify-center absolute pointer-events-none";
-      tempElement.style.left = `${sourceRect.left}px`;
-      tempElement.style.top = `${sourceRect.top}px`;
+      tempElement.style.left = `${sourceRect.left - 15}px`;
+      tempElement.style.top = `${sourceRect.top - 8}px`;
       tempElement.innerHTML = `<p class="text-neutral-50 rounded-sm px-4 py-2">${letterData.letter}</p>`;
       document.body.appendChild(tempElement);
 
